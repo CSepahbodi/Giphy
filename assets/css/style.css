@@ -16,6 +16,6 @@ body {
     width: 50%;
 }
 
-.theButtons {
-    text-align: center;
+#buttonsView {
+    align-content: center;
 }

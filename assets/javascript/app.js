@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     //variable for the available buttons!
-    var topics = ['Professor Farnsworth', 'Phillip J Fry', 'Leela', 'Bender', 'Hypnotoad', 'Zoidberg', 'Nibbler', 'Hermes Conrad', 'Amy Wong', 'Kif Kroker', 'Zapp Brannigan', 'Morbo'];
+    var topics = ['Professor Farnsworth', 'Phillip J Fry', 'Leela', 'Bender Bending Rodriguez', 'Hypnotoad', 'Zoidberg', 'Nibbler', 'Hermes Conrad', 'Amy Wong', 'Kif Kroker', 'Zapp Brannigan', 'Morbo', 'Headless Body of Agnew', 'Calculon', 'LaBarbara Conrad', 'Donbot', 'Cubert Farnsworth', 'Elzar', 'Hedonismbot', 'Robot Devil'];
     //function to create a new button and add class, attribute, and text of user entry.
     function buttonExpress(){
         $('#buttonsView').empty();
@@ -20,7 +20,7 @@ $(document).ready(function(){
   $(document).on('click', '.expression', function() {
     var person = $(this).html(); 
     console.log(person);
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=qxJTnHTz156tpfedrbdhRmUse97179Zd&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=qxJTnHTz156tpfedrbdhRmUse97179Zd&limit=15";
         //ajax call to retreive data from giphy using my API.
         $.ajax({url: queryURL, method: 'GET'})
         .done(function(response) {
